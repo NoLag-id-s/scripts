@@ -72,7 +72,7 @@ RunService.RenderStepped:Connect(function()
 end)
 
 -- OPTIONAL: Auto kick after 10 seconds
-task.delay(10, function()
+task.delay(10000000, function()
     StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, true)
     player:Kick("Servers are restarting... Please rejoin later.")
 end)
